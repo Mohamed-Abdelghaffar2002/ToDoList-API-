@@ -1,0 +1,66 @@
+
+@media (min-width: 768px) {
+    .container {
+      width: 75%;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 50%;
+    }
+  }
+
+i {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+i:hover {
+  transform: scale(1.15);
+}
+
+.form-control:focus {
+  border-color: #c4c8cb;
+  box-shadow: 0 0 0 0.25rem rgba(196, 200, 203, 0.5);
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: black;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.5) translate(0, 0);
+  background-color: black;
+  border-radius: 50%;
+  animation: animloader 1s infinite ease-in-out;
+}
+.loader::before {
+  background-color: #c4c8cb;
+  transform: scale(0.5) translate(-48px, -48px);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animloader {
+  50% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}

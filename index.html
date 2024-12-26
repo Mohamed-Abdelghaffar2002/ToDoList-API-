@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- my style link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container m-auto p-4 shadow rounded bg-light">
+      <h1 >TODO APP</h1>
+      <div class="py-4">
+        <label class="form-label" for="title">Add Todo</label>
+        <input id="title" name="title" class="form-control" type="text" />
+      </div>
+      <button id="inputBtn" class="btn btn-outline-dark mb-2">Add todo</button>
+      <span id="loader" class="loader"></span>
+      <div id="todosContent" class="todoContainer my-3 ">
+        <!-- <div class="text-center">
+          <p class="m-2 display-2">No Tasks !</p>
+        </div> -->
+      </div>
+    </div>
+
+    <!--bootstrap link -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- my js link -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
