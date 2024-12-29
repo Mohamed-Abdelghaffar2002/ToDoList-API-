@@ -73,7 +73,6 @@ function displayTodos(data) {
     for (let i = 0; i < data.length; i++) {
         allTodos += `
              <div class="alert alert-secondary d-flex justify-content-between align-items-center">
-    
               <p class="m-0 ${
                 data[i].completed ? "text-decoration-line-through" : ""
               }">${data[i].title}</p>
